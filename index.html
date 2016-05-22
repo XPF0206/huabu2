@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<script src="palette.js"></script>
+	<script src="index.js"></script>
+	 <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+	<script>
+      
+	</script>
+</head>
+<style>
+body{
+	 width:100%;
+	 height:100%;
+	 overflow:hidden;
+}
+.palette-box{
+	
+	width:1200px;
+	height:500px;
+	box-shadow:0 0 30px black;
+	margin:90px auto;
+}
+.palette-left{
+	width:160px;
+	height:100%;
+
+	border-right:1px solid #ccc;
+	box-shadow: 0 0  20px #898989;
+	background:#F3F3F3
+}
+.palette-left div{
+	font-size:18px;
+	cursor:pointer;
+	text-align:center;
+	margin-top:10px;
+}
+.palette-right{
+	position:absolute;
+	width:1039px;
+	height:500px;
+	left:245px;
+	top:90px;
+	z-index:2
+}
+.copy{
+  position:absolute;
+ border:1px solid #ccc;
+
+}
+</style>
+<body>
+  <div class="palette-box">
+  	 <div class="palette-left">
+  	 	<div class="tianjia iconfont">&#xe67d;</div>
+  	 	<div class="cexiao iconfont">&#xe664;</div>
+  	 	<div class="baocun iconfont">&#xe62f;</div>
+  	 	<hr style="margin-top:5px">
+  	 	<div class=" iconfont"  id="line"style="margin-top:-2px">&#xe637;</div>
+  	 	<div class=" iconfont" id="rect">&#xe608;</div>
+  	 	<div class=" iconfont" id="arc">&#xe617;</div>
+        <div class="pencil iconfont" id="pencil">&#xe627;</div>
+  	 	<div class=" iconfont" id="poly">&#xe6a7;</div>
+  	 	<div class=" iconfont"id="jiao">&#xe635;</div>
+  	 	<div class=" iconfont" id="stroke">&#xe63c;</div>
+  	 	<div class=" iconfont" id="fill" style="margin-top:-2px">&#xe616;</div>
+  	 	<hr style="margin-top:4px;color:#fff">
+  	 	<input type="range" max=100 min=1 value=1 id="lineWidth" style="margin-top:6px;margin-left:18px">
+  	 	<input type="Color" id="color" style="margin-left:55px;margin-top:5px"><br/>
+  	 	<input type="Color" id="color2"style="margin-top:12px;margin-left:55px;">
+  	 </div> 
+  	 <div class="palette-right">
+  	 	<div class="copy"></div>
+  	 </div> 
+  </div>
+</body>
+</html>
